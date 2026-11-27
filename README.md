@@ -72,6 +72,13 @@ The full list: [docs/INSTALL.md](docs/INSTALL.md#what-you-need).
 
 ## Install
 
+**Before first run:** use a trusted checkout and review the setup scripts before
+approving OS-level prompts. On Linux, `setup.sh` may request `sudo` to install
+Python/virtual-environment prerequisites, and setup can ask before installing build
+tools. The service defaults to local access at `127.0.0.1:8080`; do not bind it to
+`0.0.0.0` unless you intentionally need network access and have configured an API
+key. See the [installation guide](docs/INSTALL.md) for the relevant options.
+
 ### Let your AI set it up
 
 Do you use an AI coding assistant (Claude Code, Cursor, Codex, GitHub Copilot, ...)? Paste this into it:
